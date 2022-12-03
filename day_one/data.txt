@@ -1,4 +1,3 @@
-export const dataString = `
 4920
 3254
 4147
@@ -2245,4 +2244,4 @@ export const dataString = `
 2430
 2858
 2490
-4443`;
+4443
