@@ -53,20 +53,7 @@ function partOne() {
         }).join(""))
 }
 
-function partTwo() {
-    const localStacks = JSON.parse(JSON.stringify(stacks));
-    for (const move of moves) {
-        const crate = localStacks[move.from].splice(-move.count, move.count);
-        localStacks[move.to] = localStacks[move.to].concat(crate);
-    }
-    console.log(
-        indexes.map((value) => {
-            const stack = localStacks[value];
-            return stack[stack.length - 1];
-        }).join(""))
-}
+
 
 partOne();
-partTwo();
-// console.log(parsed, indexes);
 
